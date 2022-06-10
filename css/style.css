@@ -1,0 +1,866 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+:root {
+  --main-background-color: #edf5f7
+    /*#e1eaef*/
+  ;
+  --orange-writing: #ff8800;
+  --black-writing: #0d0d25;
+  font-size: 16px;
+}
+
+body {
+  font-size: 100%;
+  color: var(--black-writing);
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--black-writing);
+}
+
+.page-title {
+  text-transform: capitalize;
+}
+
+.heading {
+  font-weight: 700;
+}
+
+span.page-title {
+  color: var(--orange-writing);
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+div.fruits-background {
+  background-color: #fff;
+  background-image: url("https://github.com/Helandtech/Resturant/blob/main/Img/Fruits%20pic1.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: auto;
+  padding-bottom: 12%;
+
+}
+
+section.about {
+  background-color: var(--main-background-color);
+  background-image: url("https://github.com/Helandtech/Resturant/blob/main/Img/about%20us%20pic%202.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+
+}
+
+
+section.contact {
+  background-color: #fff;
+  background-image: url("https://github.com/Helandtech/Resturant/blob/main/Img/Cup%20tea.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+
+
+/******************************************
+/* Header
+/*******************************************/
+
+li {
+  display: inline;
+  /*border: 1px solid black;*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-left: 3%;
+  font-size: 1vw;
+}
+
+ul {
+  text-align: right;
+  /*border: 1px solid red;*/
+  margin-right: 3%;
+  margin-top: 1%;
+}
+
+input[type="search"] {
+  background-color: var(--main-background-color);
+  border: 1px solid var(--main-background-color);
+  width: 2%;
+}
+
+ul.second-menu {
+  display: none;
+}
+
+/******************************************
+/* section.main 
+/*******************************************/
+
+h1 {
+  font-size: 5.2vw;
+  line-height: 1.1;
+  width: 35%;
+  padding-top: 10rem;
+  margin-bottom: 2rem;
+  margin-left: 10%;
+}
+
+
+section.main>form>input[type="search"] {
+  margin-left: 10%;
+  border: 1px solid gray;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 35%;
+  padding: 0.8rem 0 0.8rem 1rem;
+  background-color: #fff;
+  font-size: 1vw;
+
+
+}
+
+
+.btn {
+  border: 1px solid var(--orange-writing);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--orange-writing);
+  padding: 0.8rem 1rem;
+  font-size: 0.9vw;
+}
+
+.btn-two {
+  border-radius: 4px;
+  padding: 1.5vw;
+}
+
+.main img {
+  width: 2%;
+}
+
+div.social-media {
+  margin-left: 10%;
+  margin-top: 5%;
+
+}
+
+section.main span {
+  font-size: 1.5vw;
+}
+
+section.main span {
+  margin-right: 1%;
+}
+
+.followers {
+  padding-right: 5%;
+
+}
+
+
+
+/******************************************
+/* section.about
+/*******************************************/
+
+h2.page-title {
+  font-size: 3vw;
+}
+
+/*New Added*/
+span.page-title,
+h2.page-title {
+  display: block;
+  margin: 4% auto;
+  text-align: center;
+  font-size: 1.5vw;
+
+}
+
+section.about p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  width: 80%;
+  margin: 2% auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  line-height: 1.1;
+  text-align: justify;
+
+}
+
+button.btn.btn-two {
+  margin: 0 auto 10% auto;
+}
+
+
+/*span.page-title {
+  margin-bottom: 2%;
+}
+
+section.about {
+  text-align: justify;
+  padding: 0rem 10rem 20rem 10rem;
+  margin-top: 8rem;
+  font-size: 1.15vw;
+}
+
+section.about p {
+  width: 53%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  word-spacing: 1.1;
+  margin-top: 2%;
+  margin: 4% 35%;
+  font-size: 1.15vw;
+
+}
+
+section.about p+p {
+  margin-bottom: 8%;
+}*/
+
+div.button-link {
+  margin: 0 35%;
+
+}
+
+
+div.button-link>span.btn {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 1vw;
+  padding: 1vw;
+  text-align: center;
+
+}
+
+
+div.button-link>span.btn+span {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  opacity: 0.8;
+  font-size: 1vw;
+  padding: 1vw;
+
+}
+
+
+i.fa.fa-arrow-right {
+  font-size: 1vw;
+}
+
+div.button-link>span.btn+span :hover {
+  opacity: 0.9;
+
+}
+
+
+div.button-link>span.btn+span>a {
+  color: #fff;
+}
+
+.btn-two {
+  display: none;
+}
+
+
+section.about>span.page-title+h2.page-title.heading+p+p {
+  margin-bottom: 5%;
+}
+
+/******************************************
+/* section.product
+/*******************************************/
+section.product {
+  background-color: var(--main-background-color);
+  overflow: auto;
+}
+
+
+section.product>nav>ul>li {
+  /*border: 1px solid black;*/
+  margin-left: 1.2rem;
+}
+
+
+
+section.product>nav>ul>li:first-child {
+  color: var(--orange-writing);
+  border-bottom: 2px solid var(--orange-writing);
+}
+
+
+section.product>nav>ul {
+  /*border: 1px solid red;*/
+  text-align: center;
+  width: 25%;
+  margin: 2rem auto 3rem auto;
+  border-bottom: 1px solid black;
+  padding: 0.5rem 0 0 0;
+
+}
+
+
+section.product>span.page-title {
+  display: block;
+  margin: 5% auto 3% auto;
+  font-size: 1.15vw;
+}
+
+
+/*div.menu-carousel,
+div.menu-carousel > div.menu {
+  border: 1px solid black ;
+
+}
+
+div.menu-carousel {
+  overflow: auto;
+}
+
+ div.menu {
+  float: left;
+
+}
+
+div.decoration-div {
+  clear:both;
+}*/
+
+div.menu>img {
+  width: 15%;
+  margin: 0 2%;
+}
+
+div.menu {
+
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+div.secondrow {
+  padding-bottom: 10%;
+}
+
+/******************************************
+/* section.contact
+/*******************************************/
+div.video {
+  /*border: 1px solid black;*/
+  margin: 12% auto 0 auto;
+  width: 40%;
+  padding-bottom: 10%;
+}
+
+
+video {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+
+i.fa.fa-phone {
+  display: block;
+  font-size: 2vw;
+  color: var(--orange-writing);
+  border: 2px solid var(--orange-writing);
+  text-align: center;
+  width: 4%;
+  padding-top: 0.8%;
+  padding-bottom: 0.8%;
+  border-radius: 50%;
+  margin: 3% auto;
+}
+
+section.contact>span.page-title {
+  display: block;
+  margin: 4% auto;
+  text-align: center;
+  font-size: 1.15vw;
+
+
+}
+
+section.contact>h2.page-title.heading {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+section.contact>span.phone {
+  margin: 1% auto;
+}
+
+div.time,
+div.time>div {
+  /*border: 1px solid black;*/
+}
+
+div.time {
+  width: 70%;
+  margin: 5% auto 2% auto;
+}
+
+div.time>div {
+  width: 50%;
+  float: left;
+  /*text-align: center;*/
+  text-align: left;
+
+}
+
+div.time>div>span {
+  display: block;
+  font-size: 1.5vw;
+  text-align: center;
+
+
+}
+
+div.time>div>span+span {
+  display: block;
+  font-size: 2vw;
+  font-weight: 700;
+  margin-top: 2%;
+
+}
+
+/******************************************
+/* footer.testimonials
+/*******************************************/
+
+footer.testimonials>img {
+  width: 10%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 2% auto;
+
+}
+
+footer.testimonials>span.page-title {
+  display: block;
+  margin: 2% auto;
+  text-align: center;
+  font-size: 1.15vw;
+  margin-top: 6%;
+
+}
+
+footer.testimonials>h2.page-title.heading {
+  display: block;
+  text-align: center;
+  margin: 2% auto;
+
+}
+
+footer.testimonials>span.page-title+h2.page-title.heading+img+span.page-title {
+  color: var(--black-writing);
+  font-size: 2vw;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+footer.testimonials>span.page-title+h2.page-title.heading+img+span.page-title+span.page-title {
+  color: grey;
+  font-size: 1.3vw;
+  margin-top: 1%;
+}
+
+
+footer.testimonials>span.page-title+h2.page-title.heading+img+span.page-title+span.page-title+p {
+  font-size: 1.2vw;
+  font-style: italic;
+  width: 60%;
+  margin: 1% auto 5% auto;
+  text-align: center;
+  line-height: 1.8;
+  padding-bottom: 1%;
+
+}
+
+
+
+
+
+/*
+
+
+
+
+  ----------------------------------MEDIA QUERIES--------------------------------------------
+
+
+
+
+*/
+
+
+
+
+
+@media only screen and (min-width:542px) and (max-width:1800px) {
+
+  section.product,
+  section.about {
+    margin-top: 0;
+
+  }
+
+}
+
+
+@media only screen and (max-width:1619px) {
+
+  section.product>nav>ul>li {
+    margin-left: 5%;
+
+  }
+
+
+  section.product>nav>ul {
+    margin-top: 0;
+    margin-bottom: 5%;
+    width: 50%;
+    padding-top: 1%;
+  }
+}
+
+
+
+@media only screen and (max-width:542px) {
+
+  .btn-two {
+    display: block;
+
+  }
+
+  .button-link {
+    display: none;
+  }
+
+}
+
+
+
+
+@media only screen and (max-width:480px) {
+
+  /******************************************
+/* header/main
+/*******************************************/
+
+  section.main {
+    margin-top: -30%;
+  }
+
+  h1 {
+    margin-bottom: 1%;
+    text-align: center;
+    width: 70%;
+    text-shadow: 1px 1px var(--orange-writing);
+    margin-top: 1%;
+  }
+
+  div.social-media {
+    margin-top: 2%;
+  }
+
+
+  ul.first-menu {
+    display: none;
+  }
+
+  ul.second-menu {
+    display: inline;
+    width: 50%;
+    margin-top: 2%;
+    position: relative;
+    top: 0.4rem;
+    margin-bottom: 1%;
+  }
+
+  ul.second-menu>li {
+    font-size: 2vw;
+    padding-left: -1%;
+
+  }
+
+  section.main>form>input[type="search"] {
+    display: block;
+    margin-left: 10%;
+    border-radius: 0px;
+    padding: 0.5rem;
+    width: 80%;
+    margin-bottom: 1%;
+
+  }
+
+
+  .btn {
+    display: block;
+    border: 1px solid var(--orange-writing);
+    border-radius: 0px;
+    padding: 0.5rem;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  /* background image*/
+  div.fruits-background {
+    background-size: cover;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+
+
+}
+
+
+
+@media only screen and (max-width:360px) {
+
+  /******************************************
+/* header/main
+/*******************************************/
+  div.fruits-background {
+    background-image: url("https://github.com/Helandtech/Resturant/blob/main/Img/Fruits%20pic%202.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  /******************************************
+/* About us
+/*******************************************/
+
+  section.about {
+    background-image: url("https://github.com/Helandtech/Resturant/blob/main/Img/about%20us%20pic%202.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: auto;
+  }
+
+  section.about {
+    margin-top: 0%;
+  }
+
+
+}
+
+
+
+
+@media only screen and (min-width:300px) and (max-width:330px) {
+
+  /******************************************
+/* header/main
+/*******************************************/
+  section.main {
+    margin-top: -40%;
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width:300px) {
+
+  /******************************************
+/* header/main
+/*******************************************/
+
+  section.main {
+    margin-top: -48%;
+  }
+
+  section.main>span.page-title {
+    margin-top: 15%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/*   Bigger screen */
+
+@media only screen and (min-width:542px) {
+
+  /*span.page-title,
+h2.page-title {
+  margin-left: 35%;
+  }*/
+
+
+  span.page-title {
+    margin-bottom: 2%;
+  }
+
+  section.about {
+    text-align: justify;
+    padding: 0rem 10rem 20rem 10rem;
+    margin-top: 8rem;
+    font-size: 1.15vw;
+  }
+
+  section.about p {
+    width: 53%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    word-spacing: 1.1;
+    margin-top: 2%;
+    /*margin: 4% 35%;*/
+    margin: 2% auto 0 auto;
+    font-size: 1.15vw;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+
+  section.about p+p {
+    margin-bottom: 8%;
+  }
+
+}
+
+
+
+
+
+
+@media only screen and (min-width:481px) and (max-width:601px) {
+
+  section.main {
+    margin-top: -30%;
+  }
+
+  h1 {
+    margin-top: 7%;
+    margin-bottom: 3%;
+  }
+
+
+}
+
+
+@media only screen and (min-width:601px) and (max-width:630px) {
+
+  section.main {
+    margin-top: -20%;
+
+  }
+
+}
+
+
+
+@media only screen and (min-width:631px) and (max-width:700px) {
+
+  section.main {
+    margin-top: -18%;
+
+  }
+
+}
+
+
+
+@media only screen and (min-width:701px) and (max-width:900px) {
+
+  section.main {
+    margin-top: -12%;
+
+  }
+
+}
+
+
+
+
+@media only screen and (min-width:901px) and (max-width:1125px) {
+
+  section.main {
+    margin-top: -10%;
+
+  }
+
+}
+
+
+@media only screen and (min-width:542px) and (max-width:17305px) {
+  section.about {
+    margin-top: 5%;
+    padding-bottom: 15%;
+    overflow: auto;
+    background-color: #fff;
+  }
+
+  section.product {
+    margin-top: -2%;
+    overflow: auto;
+  }
+}
+
+
+
+@media only screen and (min-width:1645px) {
+
+  div.fruits-background {
+    background-size: cover;
+  }
+  
+  section.about {
+    background-size: cover;
+  
+  }
+  
+
+}
